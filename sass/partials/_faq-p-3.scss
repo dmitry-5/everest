@@ -1,0 +1,203 @@
+.faq-p-3 {
+	@include box;
+	position: relative;
+	.layout {
+		h3 {
+			width: auto;
+			height: 16px;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 900;
+			font-size: 14px;
+			line-height: 114.8%;
+			text-align: center;
+			letter-spacing: 0.075em;
+			color: #D2D2D2;
+		}
+		h4 {
+			width: 293px;
+			height: auto;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 114.8%;
+			text-align: center;
+			letter-spacing: 0.01em;
+			color: #000000;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			margin-bottom: 80px;
+		}
+		.sn-accordion-container {
+			position: relative;
+		  width: 70%;
+		  height: auto;
+		  margin: 0 auto 150px auto;
+			@media (max-width: 1279px) {
+				width: 100%;
+			}
+			.set {
+				position: relative;
+			  width: 100%;
+			  height: auto;
+			  background-color: #fff;
+				@media (max-width: 1279px) {
+					width: 100%;
+				}
+				h5 {
+					@include transition1;
+					cursor: pointer;
+					display: block;
+				  padding: 21px 0 21px 0;
+				  text-decoration: none;
+				  border-bottom: 1px solid #ddd;
+					font-family: 'Gilroy';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 17px;
+					line-height: 114.8%;
+					letter-spacing: 0.01em;
+					color: #1D1B1B;
+					@media (max-width: 1279px) {
+						width: 100%;
+					}
+					.plus {
+						position:relative;
+					  float: right;
+					  margin-top: -10px;
+					  width: 40px;
+					  height: 40px;
+					  border-radius: 50%;
+					  transition: 200ms ease;
+					  transform: rotate(0deg);
+						&:hover {
+						  transition: 200ms ease;
+						  transform: rotate(-45deg);
+							.icon::before {
+								background: #01D957;
+							}
+							.icon::after {
+								background: #01D957;
+							}
+						}
+						.icon {
+							position:relative;
+						  width: 40px;
+						  height: 40px;
+						  top: 50%;
+						  left: 50%;
+						  transform: translate(-50%, -50%);
+							&::after {
+								content: "";
+							  position: absolute;
+							  top: 50%;
+							  left: 50%;
+							  transform: translate(-50%, -50%);
+							  display: block;
+							  width: 1px;
+							  height: 25px;
+							  background: #01D957;
+							}
+							&::before {
+								content: "";
+							  position: absolute;
+							  top: 50%;
+							  left: 50%;
+							  transform: translate(-50%, -50%);
+							  display: block;
+							  width: 25px;
+							  height: 1px;
+							  background: #01D957;
+							}
+						}
+					}
+					.minus {
+						position:relative;
+					  float: right;
+					  margin-top: -10px;
+					  width: 40px;
+					  height: 40px;
+					  border-radius: 50%;
+					  transition: 200ms ease;
+					  transform: rotate(0deg);
+						&:hover {
+						  transition: 200ms ease;
+						  transform: rotate(0deg);
+							.icon::before {
+								background: #01D957;
+							}
+							.icon::after {
+								background: #01D957;
+							}
+						}
+						.icon {
+							position:relative;
+						  width: 40px;
+						  height: 40px;
+						  top: 50%;
+						  left: 50%;
+						  transform: translate(-50%, -50%);
+							&::after {
+								content: "";
+							  position: absolute;
+							  top: 50%;
+							  left: 50%;
+							  transform: translate(-50%, -50%);
+							  display: block;
+							  width: 1px;
+							  height: 25px;
+							  background: #01D957;
+							}
+							&::before {
+								content: "";
+							  position: absolute;
+							  top: 50%;
+							  left: 50%;
+							  transform: translate(-50%, -50%);
+							  display: block;
+							  width: 25px;
+							  height: 1px;
+							  background: #01D957;
+							}
+						}
+					}
+				}
+				.active {
+					border-bottom: 0;
+					.minus {
+						transition: 200ms ease;
+  					transform: rotate(45deg);
+					}
+				}
+				.content {
+					position:relative;
+				  width: 100%;
+				  font-size: 18px;
+				  height: auto;
+				  background-color: #fff;
+				  border-bottom: 1px solid #ddd;
+				  display:none;
+					p {
+						padding: 24px 0 30px 0;
+					  margin: 0;
+					  color: #333;
+						width: 794px;
+						height: auto;
+						font-family: 'Gilroy';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 114.8%;
+						letter-spacing: 0.01em;
+						color: #1D1B1B;
+						@media (max-width: 1279px) {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

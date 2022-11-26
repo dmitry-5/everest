@@ -1,0 +1,143 @@
+.f-v-3 {
+	@include box;
+	position: relative;
+	.img-holder-2 {
+		width: 100%;
+		height: 417px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		@media (max-width: 1279px) {
+			display: block;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.img-holder-mob {
+		display: none;
+
+		@media (max-width: 1279px) {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.links {
+		z-index: 5;
+		position: absolute;
+		top: 20px;
+		a {
+			@include transition1;
+			width: auto;
+			height: 16px;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 114.8%;
+			letter-spacing: 0.01em;
+			color: #FFFFFF;
+			&:hover {
+				color: #01D957;
+			}
+		}
+	}
+	.text-f-v-3 {
+		width: 711px;
+		height: 417px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+		@media (max-width: 1279px) {
+			width: 100%;
+			height: 417px;
+			z-index: 2;
+		}
+		h2 {
+			width: 711px;
+			height: 57px;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 50px;
+			line-height: 114.8%;
+			letter-spacing: 0.01em;
+			color: $text-1;
+			margin-bottom: 20px;
+			@media (max-width: 1279px) {
+				width: 100%;
+				height: auto;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 114.8%;
+				text-align: center;
+				letter-spacing: 0.01em;
+				color: #FFFFFF;
+			}
+		}
+		p {
+			width: 590px;
+			height: auto;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 114.8%;
+			letter-spacing: 0.01em;
+			color: $text-1;
+			margin-bottom: 30px;
+			@media (max-width: 1279px) {
+				width: 100%;
+				height: auto;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 150%;
+				text-align: center;
+				letter-spacing: 0.01em;
+				color: #FFFFFF;
+				padding: 20px 0 20px 0;
+			}
+		}
+		a {
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 114.8%;
+			text-align: center;
+			letter-spacing: 0.01em;
+			color: $text-1;
+			width: 183px;
+			height: 48px;
+			background: $button;
+			border-radius: 27px;
+			padding: 16px 28px 16px 31px;
+			@include transition1;
+			@media (max-width: 1279px) {
+				width: 100%;
+			}
+			&:hover {
+				background: $text-1;
+				color: $button;
+				border: 1px solid $button;
+			}
+		}
+	}
+}
